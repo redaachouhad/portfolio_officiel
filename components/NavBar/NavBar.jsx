@@ -11,7 +11,7 @@ function NavBar() {
   const handleClickMenuHeight = () => {
     console.log(heightMenu);
     if (heightMenu === "h-0") {
-      setHeightMenu("h-96");
+      setHeightMenu("h-[28rem]");
     } else {
       setHeightMenu("h-0");
     }

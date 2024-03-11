@@ -38,7 +38,7 @@ function About() {
     <div className="w-full h-[100vh] relative bg-[rgb(15,12,43)] flex justify-center items-center ">
       <div className="w-[100vmin] lg:w-[140vmin]  flex flex-col lg:flex-row-reverse justify-around items-center p-3 gap-2 ">
         {" "}
-        <div className="flex items-center justify-center relative w-[50vmin] lg:w-96 h-[50vmin] lg:h-96">
+        <div className="flex items-center justify-center relative w-[43vmin] lg:w-86 w- h-[43vmin] lg:h-86">
           <div className="absolute w-[95%] h-[95%] border-[3px] border-transparent border-t-blue-500 border-b-blue-500 rounded-full border-spinner-right"></div>
           <div className="absolute w-[100%] h-[100%] border-[3px] border-transparent border-r-blue-500 border-l-blue-500 rounded-full border-spinner-left"></div>
           {/* <img
@@ -47,11 +47,13 @@ function About() {
             className="w-[88%] rounded-full z-10"
           /> */}
           <Image
-            src={myImg}
+            src={myImg.src}
             alt="my image"
-            width={100}
-            height={100}
+            width={50}
+            height={50}
             className="w-[88%] rounded-full z-10"
+            unoptimized={true}
+            priority
           />
         </div>
         <style jsx>{`
