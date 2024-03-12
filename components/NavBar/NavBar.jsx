@@ -2,7 +2,7 @@
 
 import { itemMenu } from "@ext/utils/data";
 import { useState } from "react";
-import { IoMenu } from "react-icons/io5";
+import { IoLogoGithub, IoMenu } from "react-icons/io5";
 import { PiFlowerLotusLight } from "react-icons/pi";
 import ItemMenu from "./ItemMenu";
 
@@ -11,7 +11,7 @@ function NavBar() {
   const handleClickMenuHeight = () => {
     console.log(heightMenu);
     if (heightMenu === "h-0") {
-      setHeightMenu("h-[28rem]");
+      setHeightMenu("h-[32rem]");
     } else {
       setHeightMenu("h-0");
     }
@@ -26,17 +26,19 @@ function NavBar() {
         className="h-fit w-fit cursor-pointer"
         onClick={handleClickMenuHeight}
       >
-        <IoMenu className="text-2xl visible md:hidden" />
+        <IoMenu className="text-2xl visible lg:hidden" />
       </div>
 
       <div
-        className={`absolute md:static top-full md:top-auto left-0 md:left-auto w-full md:w-fit overflow-hidden transition-height duration-500 ease ${heightMenu} md:h-fit`}
+        className={`absolute lg:static top-full lg:top-auto left-0 lg:left-auto w-full lg:w-fit overflow-hidden transition-height duration-500 ease ${heightMenu} lg:h-fit`}
       >
-        <div className="flex md:flex-row flex-col gap-8 md:gap-12 lg:gap-16 py-6 md:py-0 w-full md:w-fit items-center bg-[rgba(0,0,0,0.7)] md:bg-transparent backdrop-blur-lg">
+        <div className="flex lg:flex-row flex-col gap-10 py-6 lg:py-0 w-full lg:w-fit items-center bg-[rgba(0,0,0,0.7)] lg:bg-transparent backdrop-blur-lg">
           {itemMenu.map((item, index) => {
             return <ItemMenu key={index} title={item.title} url={item.url} />;
           })}
-          <button>Github Profile</button>
+          <button className="border-2 border-white flex gap-1 items-center p-2 rounded-lg bg-black">
+            <IoLogoGithub className="text-xl" /> <span>Github Profile</span>
+          </button>
         </div>
       </div>
     </div>

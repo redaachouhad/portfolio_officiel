@@ -35,30 +35,25 @@ function About() {
       .start();
   }, []);
   return (
-    <div className="w-full h-[100vh] relative bg-[rgb(15,12,43)] flex justify-center items-center ">
-      <div className="w-[100vmin] lg:w-[140vmin]  flex flex-col lg:flex-row-reverse justify-around items-center p-3 gap-2 ">
+    <div className="w-full relative bg-[rgb(7,5,25)] flex justify-center items-center py-32 ">
+      <div className="w-[90vmin] lg:w-[140vmin]  flex flex-col lg:flex-row-reverse justify-around items-center p-3 lg:gap-2 gap-10">
         {" "}
-        <div className="flex items-center justify-center relative w-[43vmin] lg:w-86 w- h-[43vmin] lg:h-86">
-          <div className="absolute w-[95%] h-[95%] border-[3px] border-transparent border-t-blue-500 border-b-blue-500 rounded-full border-spinner-right"></div>
+        <div className="flex items-center justify-center relative w-[45vmin] lg:w-96 h-[45vmin] lg:h-96">
+          <div className="absolute w-[93%] h-[93%] border-[3px] border-transparent border-t-blue-500 border-b-blue-500 rounded-full border-spinner-right"></div>
           <div className="absolute w-[100%] h-[100%] border-[3px] border-transparent border-r-blue-500 border-l-blue-500 rounded-full border-spinner-left"></div>
-          {/* <img
-            src={myImg.src}
-            alt="image"
-            className="w-[88%] rounded-full z-10"
-          /> */}
           <Image
             src={myImg.src}
             alt="my image"
             width={50}
             height={50}
-            className="w-[88%] rounded-full z-10"
+            className="w-[83%] rounded-full z-10"
             unoptimized={true}
             priority
           />
         </div>
         <style jsx>{`
           .border-spinner-right {
-            animation: spin-right 17s linear infinite;
+            animation: spin-right 10s linear infinite;
           }
 
           @keyframes spin-right {
@@ -71,7 +66,7 @@ function About() {
           }
 
           .border-spinner-left {
-            animation: spin-left 17s linear infinite;
+            animation: spin-left 10s linear infinite;
           }
 
           @keyframes spin-left {
@@ -84,23 +79,35 @@ function About() {
           }
         `}</style>
         <div
-          className="text-white text-center lg:text-start lg:w-[60%] bg-[rgb(34,30,72)] z-10 rounded-lg p-4"
-          style={{ boxShadow: "0px 0px 20px black" }}
+          className="text-white text-center lg:text-start lg:w-[60%] bg-[rgb(31,27,75)] z-10 rounded-lg p-4"
+          style={{ boxShadow: "0px 0px 10px 4px #5d2b6555" }}
         >
-          <p className="text-[1.5rem] lg:text-[2.5rem] font-normal">Hi, I am</p>
-          <p className="text-[1.8rem] lg:text-[3rem] font-semibold permanent-marker-regular">
+          <p className="text-[1.2rem] lg:text-[2rem] font-normal flex-col items-center">
+            Hi👋 , I am
+          </p>
+          <p className="text-[1.3rem] lg:text-[2.5rem] font-semibold permanent-marker-regular">
             Reda Achouhad
           </p>
-          <p className="text-[1.3rem] lg:text-[2rem] mb-1">
+          <p className="text-[1.2rem] lg:text-[1.7rem] mb-1">
             <span ref={appRef} className="text-blue-300 font-bold"></span>
           </p>
-          <p className="text-white text-center lg:text-justify text-lg">
-            I am a motivated and versatile individual, always eager to take on
+          <p className="text-white text-center lg:text-justify text-sm lg:text-lg">
+            I am graduated from{" "}
+            <strong className="text-[#8169e4]">
+              Engineering School Grenoble-INP-ENSIMAG & UGA University
+            </strong>
+            . I am a motivated and versatile individual, always eager to take on
             new challenges. With a passion for learning I am dedicated to
             delivering high-quality results. With a positive attitude and a
             growth mindset, I am ready to make a meaningful contribution and
             achieve great things.
           </p>
+
+          <div className="flex justify-center mt-3">
+            <button className="p-1.5 rounded-lg bg-blue-800 font-bold shadow-md shadow-black">
+              Download CV
+            </button>
+          </div>
         </div>
       </div>
     </div>
