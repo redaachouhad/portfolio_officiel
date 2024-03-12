@@ -1,158 +1,50 @@
-import { FaBriefcase } from "react-icons/fa"; // You can use different icons
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
+"use client";
+
 import "react-vertical-timeline-component/style.min.css"; // Add this line for default styling
 
 function Education() {
   return (
-    <div className="w-full bg-[rgb(7,5,25)] text-white  border flex flex-col justify-center items-center py-4">
-      <h1 className="text-white text-[1.5rem] lg:text-[3rem] mb-5">
-        Education
+    <div className="w-full bg-[rgb(24,17,86)] flex flex-col justify-center items-center py-4 border-none">
+      <h1 className="text-white text-[2.5rem] md:text-[2rem] lg:text-[3rem] mb-5">
+        🎓 Education
       </h1>
-      <VerticalTimeline className="z-10">
-        <div>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--education"
-            contentStyle={{
-              background: "rgb(18,15,37)",
-              color: "#fff",
-              border: "1px solid red",
-              boxShadow: "0px 0px 10px red",
-            }}
-            contentArrowStyle={{
-              borderRight: "7px solid  red",
-            }}
-            date="2011 - present"
-            iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-            icon={<FaBriefcase />}
-            visible={true}
-          >
-            <h3 className="vertical-timeline-element-title">Work Experience</h3>
-            <p>Some details about your work experience.</p>
-          </VerticalTimelineElement>
+      <div className="w-[80vmin] sm:w-[95vmin] lg:w-[110vmin] xl:w-[140vmin] flex-col items-center relative z-10">
+        {/* one line */}
+        <div className="border-2 h-full border-red-500 absolute top-0 left-0 sm:left-1/2 rounded-full -translate-x-1/2"></div>
+        <div className="w-full h-12 relative"></div>
+
+        {/* test one line */}
+        <div className="w-full h-72 relative mb-4">
+          <div className="w-[100%] sm:w-[50%] h-full absolute right-0 sm:left-0 top-0 flex flex-row-reverse sm:flex-row">
+            <div className="h-full border-2 border-red-500 w-full rounded-lg p-2 flex-col">
+              <div className="w-full border">
+                <div></div>
+              </div>
+            </div>
+            <div className="flex w-12 flex-row-reverse sm:flex-row">
+              <div className="w-0 h-0 border-[0.45rem] border-transparent border-r-red-500 sm:border-l-red-500 sm:border-r-transparent translate-y-12"></div>
+              <div className=" w-14 h-14  border-[3px] border-red-500 rounded-full  absolute left-0 right-auto sm:right-0 sm:left-auto -translate-x-1/2 sm:translate-x-1/2 translate-y-1/2"></div>
+              <div className="h-10 sm:h-14 absolute left-full translate-y-1/2 translate-x-9 text-white sm:flex justify-center items-center hidden ">
+                08/07/2000
+              </div>
+            </div>
+          </div>
         </div>
-        <VerticalTimelineElement
-          visible={true}
-          className="vertical-timeline-element--education"
-          contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-          contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
-          date="2011 - present"
-          iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-          icon={<FaBriefcase />}
-        >
-          <h3 className="vertical-timeline-element-title">Work Experience</h3>
-          <p>Some details about your work experience.</p>
-        </VerticalTimelineElement>
 
-        {/*  */}
-
-        <VerticalTimelineElement
-          visible={true}
-          className="vertical-timeline-element--work"
-          contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-          contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
-          date="2011 - present"
-          iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-          icon={"icon"}
-        >
-          <h3 className="vertical-timeline-element-title">Creative Director</h3>
-          <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
-          <p>
-            Creative Direction, User Experience, Visual Design, Project
-            Management, Team Leading
-          </p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          visible={true}
-          className="vertical-timeline-element--work"
-          date="2010 - 2011"
-          iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-          icon={"icon"}
-        >
-          <h3 className="vertical-timeline-element-title">Art Director</h3>
-          <h4 className="vertical-timeline-element-subtitle">
-            San Francisco, CA
-          </h4>
-          <p>
-            Creative Direction, User Experience, Visual Design, SEO, Online
-            Marketing
-          </p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          visible={true}
-          className="vertical-timeline-element--work"
-          date="2008 - 2010"
-          iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-          icon={"icon"}
-        >
-          <h3 className="vertical-timeline-element-title">Web Designer</h3>
-          <h4 className="vertical-timeline-element-subtitle">
-            Los Angeles, CA
-          </h4>
-          <p>User Experience, Visual Design</p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          visible={true}
-          className="vertical-timeline-element--work"
-          date="2006 - 2008"
-          iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-          icon={"icon"}
-        >
-          <h3 className="vertical-timeline-element-title">Web Designer</h3>
-          <h4 className="vertical-timeline-element-subtitle">
-            San Francisco, CA
-          </h4>
-          <p>User Experience, Visual Design</p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          visible={true}
-          className="vertical-timeline-element--education"
-          date="April 2013"
-          iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
-          icon={"icon"}
-        >
-          <h3 className="vertical-timeline-element-title">
-            Content Marketing for Web, Mobile and Social Media
-          </h3>
-          <h4 className="vertical-timeline-element-subtitle">Online Course</h4>
-          <p>Strategy, Social Media</p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          visible={true}
-          className="vertical-timeline-element--education"
-          date="November 2012"
-          iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
-          icon={"icon"}
-        >
-          <h3 className="vertical-timeline-element-title">
-            Agile Development Scrum Master
-          </h3>
-          <h4 className="vertical-timeline-element-subtitle">Certification</h4>
-          <p>Creative Direction, User Experience, Visual Design</p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          visible={true}
-          contentStyle={{
-            background: "rgb(18,15,37)",
-            color: "#fff",
-            border: "2px solid red",
-          }}
-          className="vertical-timeline-element--education"
-          date="2002 - 2006"
-          iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
-          icon={"icon"}
-        >
-          <h3 className="vertical-timeline-element-title">
-            Bachelor of Science in Interactive Digital Media Visual Imaging
-          </h3>
-          <h4 className="vertical-timeline-element-subtitle">
-            Bachelor Degree
-          </h4>
-          <p>Creative Direction, Visual Design</p>
-        </VerticalTimelineElement>
-      </VerticalTimeline>
+        {/* test one line */}
+        <div className="w-full h-72 relative mb-4">
+          <div className="w-[100%] sm:w-[50%] h-full absolute right-0 top-0 flex flex-row-reverse ">
+            <div className="h-full border-2 border-red-500 w-full rounded-lg p-2"></div>
+            <div className="flex w-12 flex-row-reverse">
+              <div className="w-0 h-0 border-[0.45rem] border-transparent border-r-red-500 translate-y-12"></div>
+              <div className="w-14 h-14  border-[3px] border-red-500  rounded-full absolute left-0 -translate-x-1/2 translate-y-1/2"></div>
+              <div className="h-10 sm:h-14 absolute right-full translate-y-1/2 -translate-x-9 text-white hidden sm:flex justify-center items-center">
+                08/07/2000
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

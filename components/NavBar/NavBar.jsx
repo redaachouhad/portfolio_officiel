@@ -32,7 +32,7 @@ function NavBar() {
       <div
         className={`absolute lg:static top-full lg:top-auto left-0 lg:left-auto w-full lg:w-fit overflow-hidden transition-height duration-500 ease ${heightMenu} lg:h-fit`}
       >
-        <div className="flex lg:flex-row flex-col gap-10 py-6 lg:py-0 w-full lg:w-fit items-center bg-[rgba(0,0,0,0.7)] lg:bg-transparent backdrop-blur-lg">
+        <div className="flex lg:flex-row flex-col gap-10 py-6 lg:py-0 w-full lg:w-fit items-center bg-[rgba(0,0,0,0.5)] lg:bg-transparent backdrop-blur-xl">
           {itemMenu.map((item, index) => {
             return <ItemMenu key={index} title={item.title} url={item.url} />;
           })}

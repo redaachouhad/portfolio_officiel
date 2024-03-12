@@ -38,7 +38,7 @@ function About() {
     <div className="w-full relative bg-[rgb(7,5,25)] flex justify-center items-center py-32 ">
       <div className="w-[90vmin] lg:w-[140vmin]  flex flex-col lg:flex-row-reverse justify-around items-center p-3 lg:gap-2 gap-10">
         {" "}
-        <div className="flex items-center justify-center relative w-[45vmin] lg:w-96 h-[45vmin] lg:h-96">
+        <div className="flex items-center justify-center relative w-[50vmin] lg:w-96 h-[50vmin] lg:h-96">
           <div className="absolute w-[93%] h-[93%] border-[3px] border-transparent border-t-blue-500 border-b-blue-500 rounded-full border-spinner-right"></div>
           <div className="absolute w-[100%] h-[100%] border-[3px] border-transparent border-r-blue-500 border-l-blue-500 rounded-full border-spinner-left"></div>
           <Image
@@ -92,11 +92,7 @@ function About() {
             <span ref={appRef} className="text-blue-300 font-bold"></span>
           </p>
           <p className="text-white text-center lg:text-justify text-sm lg:text-lg">
-            I am graduated from{" "}
-            <strong className="text-[#8169e4]">
-              Engineering School Grenoble-INP-ENSIMAG & UGA University
-            </strong>
-            . I am a motivated and versatile individual, always eager to take on
+            I am a motivated and versatile individual, always eager to take on
             new challenges. With a passion for learning I am dedicated to
             delivering high-quality results. With a positive attitude and a
             growth mindset, I am ready to make a meaningful contribution and
