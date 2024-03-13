@@ -32,7 +32,7 @@ function Education() {
     },
   };
   return (
-    <div className="w-full bg-[rgb(29,9,65)] flex flex-col justify-center items-center py-4 border-none">
+    <div className="w-full bg-[rgb(7,5,25)] flex flex-col justify-center items-center py-4 border-none">
       <h1 className="text-white text-[1.7rem] md:text-[2rem] lg:text-[3rem] mb-5">
         🎓 Education
       </h1>
