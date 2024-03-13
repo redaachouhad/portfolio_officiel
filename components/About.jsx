@@ -35,7 +35,7 @@ function About() {
       .start();
   }, []);
   return (
-    <div className="w-full relative bg-[rgb(7,5,25)] flex justify-center items-center py-32 ">
+    <div className="w-full h-[100vh] relative bg-[rgb(7,5,25)] flex justify-center items-center">
       <div className="w-[90vmin] lg:w-[140vmin]  flex flex-col lg:flex-row-reverse justify-around items-center p-3 lg:gap-2 gap-10">
         {" "}
         <div className="flex items-center justify-center relative w-[50vmin] lg:w-96 h-[50vmin] lg:h-96">
@@ -85,7 +85,7 @@ function About() {
           <p className="text-[1.2rem] lg:text-[2rem] font-normal flex-col items-center">
             Hi👋 , I am
           </p>
-          <p className="text-[1.3rem] lg:text-[2.5rem] font-semibold permanent-marker-regular">
+          <p className="text-[1.3rem] lg:text-[2.5rem] font-semibold sail-regular">
             Reda Achouhad
           </p>
           <p className="text-[1.2rem] lg:text-[1.7rem] mb-1">

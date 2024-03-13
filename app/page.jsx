@@ -5,7 +5,7 @@ import Snowfall from "react-snowfall";
 
 export default function Home() {
   return (
-    <div className="">
+    <div className="bg-[rgb(7,5,25)]">
       <Snowfall
         // Changes the snowflake color
         color="rgba(255,255,255, 0.2)"
