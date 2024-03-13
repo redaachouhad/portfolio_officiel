@@ -5,34 +5,8 @@ import "react-vertical-timeline-component/style.min.css"; // Add this line for d
 import CardLeft from "./CardLeft";
 import CardRight from "./CardRight";
 function Education() {
-  const draw = {
-    hidden: { pathLength: 0, opacity: 0 },
-    visible: (i) => {
-      const delay = 1 + i * 0.5;
-      return {
-        pathLength: 1,
-        opacity: 1,
-        transition: {
-          pathLength: { delay, type: "spring", duration: 1.5, bounce: 0 },
-          opacity: { delay, duration: 0.01 },
-        },
-      };
-    },
-  };
-  const icon = {
-    hidden: {
-      opacity: 0,
-      pathLength: 0,
-      fill: "rgba(255, 255, 255, 0)",
-    },
-    visible: {
-      opacity: 1,
-      pathLength: 1,
-      fill: "rgba(255, 255, 255, 1)",
-    },
-  };
   return (
-    <div className="w-full bg-[rgb(7,5,25)] flex flex-col justify-center items-center py-4 border-none">
+    <div className="w-full flex flex-col justify-center items-center py-4 border-none">
       <h1 className="text-white text-[1.7rem] md:text-[2rem] lg:text-[3rem] mb-5">
         🎓 Education
       </h1>
@@ -40,8 +14,8 @@ function Education() {
 
       <div className="w-[82.5vmin] sm:w-[95vmin] lg:w-[100vmin] xl:w-[130vmin]  flex-col items-center justify-center z-10 h-fit relative">
         <div
-          className="border-2 h-full border-blue-500 absolute top-0 left-0 sm:left-1/2 rounded-full -translate-x-1/2"
-          style={{ boxShadow: "0px 0px 20px 3px rgba(0,0,255,0.3)" }}
+          className="border-2 h-full border-blue-800 absolute top-0 left-0 sm:left-1/2 rounded-full -translate-x-1/2"
+          style={{ boxShadow: "0px 0px 10px rgba(0,0,255,0.8)" }}
         ></div>
         <br />
         <br />

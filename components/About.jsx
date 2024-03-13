@@ -1,4 +1,5 @@
 "use client";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import { useEffect, useRef } from "react";
 import Typewriter from "typewriter-effect/dist/core";
@@ -20,6 +21,7 @@ function About() {
     });
 
     typewriter
+      .pauseFor(600)
       .typeString(words[0])
       .pauseFor(500)
       .deleteChars(words[0].length)
@@ -38,7 +40,12 @@ function About() {
     <div className="w-full h-[100vh] relative bg-[rgb(7,5,25)] flex justify-center items-center">
       <div className="w-[90vmin] lg:w-[140vmin]  flex flex-col lg:flex-row-reverse justify-around items-center p-3 lg:gap-2 gap-10">
         {" "}
-        <div className="flex items-center justify-center relative w-[50vmin] lg:w-96 h-[50vmin] lg:h-96">
+        <motion.div
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0, transition: { duration: 0.5 } }}
+          viewport={{ once: true }}
+          className="flex items-center justify-center relative w-[50vmin] lg:w-96 h-[50vmin] lg:h-96"
+        >
           <div className="absolute w-[93%] h-[93%] border-[3px] border-transparent border-t-blue-500 border-b-blue-500 rounded-full border-spinner-right"></div>
           <div className="absolute w-[100%] h-[100%] border-[3px] border-transparent border-r-blue-500 border-l-blue-500 rounded-full border-spinner-left"></div>
           <Image
@@ -50,7 +57,7 @@ function About() {
             unoptimized={true}
             priority
           />
-        </div>
+        </motion.div>
         <style jsx>{`
           .border-spinner-right {
             animation: spin-right 10s linear infinite;
@@ -78,7 +85,10 @@ function About() {
             }
           }
         `}</style>
-        <div
+        <motion.div
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0, transition: { duration: 0.5 } }}
+          viewport={{ once: true }}
           className="text-white text-center lg:text-start lg:w-[60%] bg-[rgb(31,27,75)] z-10 rounded-lg p-4"
           style={{ boxShadow: "0px 0px 10px 4px #5d2b6555" }}
         >
@@ -104,7 +114,7 @@ function About() {
               Download CV
             </button>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

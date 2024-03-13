@@ -4,7 +4,7 @@ function CardRight({ item }) {
       <div className="w-[100%] sm:w-[50%] h-full flex flex-row-reverse">
         <div
           className="w-full p-6 bg-[rgb(16,14,36)] border-2 border-blue-500 rounded-lg"
-          style={{ boxShadow: "0px 0px 20px 3px rgba(0,0,255,0.3)" }}
+          style={{ boxShadow: "0px 0px 10px rgba(0,0,255,0.8)" }}
         >
           <h1 className="text-white text-lg sm:text-xl font-semibold mb-1">
             {item?.nameOfSchool}
@@ -25,7 +25,7 @@ function CardRight({ item }) {
               <div className="w-0 h-0 border-[0.3rem] border-transparent border-l-blue-300"></div>
               <span className="text-blue-300 font-medium underline-blue-300 underline">
                 {" "}
-                Obtained diploma:
+                Obtained diplomas:
               </span>
             </div>
           )}
@@ -45,7 +45,7 @@ function CardRight({ item }) {
         <div className="flex w-12 relative flex-row-reverse">
           <div className="w-0 h-0 border-[0.45rem] border-transparent border-r-blue-500 translate-y-12"></div>
           <div
-            className=" w-14 h-14  border-[3px] border-blue-500 rounded-full absolute top-0 left-0 -translate-x-1/2 translate-y-1/2"
+            className=" w-14 h-14  border-[4px] border-blue-800 rounded-full absolute top-0 left-0 -translate-x-1/2 translate-y-1/2"
             style={{
               backgroundImage: `url(${item?.imageUrl})`,
               backgroundPosition: "center",
