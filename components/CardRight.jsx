@@ -4,7 +4,7 @@ function CardRight({ item }) {
       <div className="w-[100%] sm:w-[50%] h-full flex flex-row-reverse">
         <div
           className="w-full p-6 bg-[rgb(16,14,36)] border-2 border-blue-500 rounded-lg"
-          style={{ boxShadow: "0px 0px 10px rgba(0,0,255,0.8)" }}
+          style={{ boxShadow: "0px 0px 3px rgba(0,0,255,0.8)" }}
         >
           <h1 className="text-white text-lg sm:text-xl font-semibold mb-1">
             {item?.nameOfSchool}
