@@ -21,7 +21,7 @@ function About() {
     });
 
     typewriter
-      .pauseFor(600)
+      .pauseFor(200)
       .typeString(words[0])
       .pauseFor(500)
       .deleteChars(words[0].length)
@@ -42,9 +42,9 @@ function About() {
         {" "}
         <motion.div
           initial={{ opacity: 0, x: 40 }}
-          whileInView={{ opacity: 1, x: 0, transition: { duration: 0.3 } }}
+          whileInView={{ opacity: 1, x: 0, transition: { duration: 0.5 } }}
           viewport={{ once: true }}
-          className="flex items-center justify-center relative w-[50vmin] lg:w-96 h-[50vmin] lg:h-96"
+          className="flex items-center justify-center relative w-[48vmin] lg:w-96 h-[48vmin] lg:h-96"
         >
           <div className="absolute w-[93%] h-[93%] border-[3px] border-transparent border-t-blue-500 border-b-blue-500 rounded-full border-spinner-right"></div>
           <div className="absolute w-[100%] h-[100%] border-[3px] border-transparent border-r-blue-500 border-l-blue-500 rounded-full border-spinner-left"></div>
@@ -87,7 +87,7 @@ function About() {
         `}</style>
         <motion.div
           initial={{ opacity: 0, x: -40 }}
-          whileInView={{ opacity: 1, x: 0, transition: { duration: 0.3 } }}
+          whileInView={{ opacity: 1, x: 0, transition: { duration: 0.5 } }}
           viewport={{ once: true }}
           className="text-white text-center lg:text-start lg:w-[60%] bg-[rgb(31,27,75)] z-10 rounded-lg p-4"
           style={{ boxShadow: "0px 0px 10px 4px #5d2b6555" }}
