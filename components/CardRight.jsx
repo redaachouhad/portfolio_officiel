@@ -99,7 +99,7 @@ function CardRight({ item }) {
               y: 0,
               x: -40,
               opacity: 1,
-              transition: { duration: 0.9, delay: 0.9 },
+              transition: { duration: 0.7, delay: 0.9 },
             }}
             viewport={{ once: true }}
             className="w-24 h-14 absolute translate-y-1/2 right-full -translate-x-12 sm:flex sm:justify-center sm:items-center hidden text-blue-300  font-semibold"
