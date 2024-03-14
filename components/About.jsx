@@ -37,12 +37,12 @@ function About() {
       .start();
   }, []);
   return (
-    <div className="w-full h-[100vh] relative bg-[rgb(7,5,25)] flex justify-center items-center">
+    <div className="w-full h-[100vh] relative bg-[rgb(7,5,25)] flex justify-center items-center overflow-hidden">
       <div className="w-[90vmin] lg:w-[140vmin]  flex flex-col lg:flex-row-reverse justify-around items-center p-3 lg:gap-2 gap-10">
         {" "}
         <motion.div
-          initial={{ opacity: 0, x: 40 }}
-          whileInView={{ opacity: 1, x: 0, transition: { duration: 0.5 } }}
+          initial={{ opacity: 0, x: 70 }}
+          whileInView={{ opacity: 1, x: 0, transition: { duration: 0.7 } }}
           viewport={{ once: true }}
           className="flex items-center justify-center relative w-[48vmin] lg:w-96 h-[48vmin] lg:h-96"
         >
@@ -86,11 +86,11 @@ function About() {
           }
         `}</style>
         <motion.div
-          initial={{ opacity: 0, x: -40 }}
-          whileInView={{ opacity: 1, x: 0, transition: { duration: 0.5 } }}
+          initial={{ opacity: 0, x: -70 }}
+          whileInView={{ opacity: 1, x: 0, transition: { duration: 0.7 } }}
           viewport={{ once: true }}
-          className="text-white text-center lg:text-start lg:w-[60%] bg-[rgb(31,27,75)] z-10 rounded-lg p-4"
-          style={{ boxShadow: "0px 0px 10px 4px #5d2b6555" }}
+          className="text-white text-center lg:text-start lg:w-[60%] bg-[rgb(33,27,105)] z-10 rounded-lg p-4"
+          // style={{ boxShadow: "0px 0px 10px 4px #5d2b6555" }}
         >
           <p className="text-[1.2rem] lg:text-[2rem] font-normal flex-col items-center">
             Hi👋 , I am

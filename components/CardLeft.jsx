@@ -12,11 +12,10 @@ function CardLeft({ item }) {
           whileInView={{
             x: 0,
             opacity: 1,
-            transition: { duration: 1, delay: 1.2 },
+            transition: { duration: 1, delay: 2 },
           }}
           viewport={{ once: true }}
           className="w-full p-6 bg-[rgb(30,27,69)] border-blue-500 border-2 rounded-lg"
-          style={{ boxShadow: "0px 0px 3px rgba(0,0,255,0.8)" }}
         >
           <h1 className="text-white text-lg sm:text-xl font-semibold mb-1">
             {item?.nameOfSchool}
@@ -28,7 +27,7 @@ function CardLeft({ item }) {
             {item?.date}
           </p>
 
-          <p className="text-white text-xs sm:text-sm mt-2">
+          <p className="text-white text-xs sm:text-sm mt-2 text-justify">
             {item?.description}
           </p>
           <div className="text-white text-xs sm:text-sm mt-4 flex items-center">
@@ -58,7 +57,7 @@ function CardLeft({ item }) {
               opacity: 1,
               transition: {
                 duration: 0.5,
-                delay: 0.3,
+                delay: 1,
               },
             }}
             viewport={{ once: true }}
@@ -75,8 +74,8 @@ function CardLeft({ item }) {
               x: isSmallScreen ? "-50%" : "50%",
               y: "0",
               transition: {
-                duration: 0.8,
-                delay: 0.5,
+                duration: 0.9,
+                delay: 0.9,
               },
             }}
             viewport={{ once: true }}
@@ -93,7 +92,7 @@ function CardLeft({ item }) {
               y: "0",
               x: 40,
               opacity: 1,
-              transition: { duration: 0.5, delay: 0.7 },
+              transition: { duration: 0.7, delay: 0.9 },
             }}
             viewport={{ once: true }}
             className="w-24 h-14 absolute translate-y-1/2 left-full translate-x-12 sm:flex sm:justify-center sm:items-center hidden text-blue-300  font-semibold"
