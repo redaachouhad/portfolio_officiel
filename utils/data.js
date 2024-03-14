@@ -66,3 +66,71 @@ export const dataEducation = [
     imageUrl: ensimag_logo.src,
   },
 ];
+
+// Data of Skills:
+import logoBoostrap from "./../public/images/boostrap.webp";
+import logoCss from "./../public/images/css_logo.webp";
+import logoExpress from "./../public/images/expressjs.webp";
+import logoGit from "./../public/images/git.webp";
+import logoGithub from "./../public/images/github.webp";
+import logoGPU from "./../public/images/gpu.webp";
+import logoHtml from "./../public/images/html_logo.webp";
+import logoJavaScript from "./../public/images/js.webp";
+import logoMaterialUi from "./../public/images/material_ui.webp";
+import logoMongoDb from "./../public/images/mongodb.webp";
+import logoMySql from "./../public/images/mysql2.webp";
+import logoNextAuth from "./../public/images/nextauth.png";
+import logoNextjs from "./../public/images/nextjs.png";
+import logoNodeJs from "./../public/images/nodejs.webp";
+import logoPostgresql from "./../public/images/postgresql.webp";
+import logoPostman from "./../public/images/postman.webp";
+import logoPython from "./../public/images/python.webp";
+import logoPytorch from "./../public/images/pytorch.webp";
+import logoReact from "./../public/images/react.webp";
+import logoRedux from "./../public/images/redux.png";
+import logoVercel from "./../public/images/vercel.webp";
+import logoVscode from "./../public/images/vs_code.webp";
+export const dataSkills = [
+  {
+    title: "Frontend",
+    items: [
+      { imageSrc: logoHtml, name: "HTML" },
+      { imageSrc: logoCss, name: "CSS" },
+      { imageSrc: logoJavaScript, name: "JavaScript" },
+      { imageSrc: logoBoostrap, name: "Boostrap" },
+      { imageSrc: logoReact, name: "React.js" },
+      { imageSrc: logoNextjs, name: "Next.js" },
+      { imageSrc: logoNextAuth, name: "NextAuth.js" },
+      { imageSrc: logoRedux, name: "Redux" },
+      { imageSrc: logoMaterialUi, name: "Material UI" },
+    ],
+  },
+  {
+    title: "Backend",
+    items: [
+      { imageSrc: logoNodeJs, name: "Node.js" },
+      { imageSrc: logoExpress, name: "Express.js" },
+      { imageSrc: logoMongoDb, name: "MongoDb" },
+      { imageSrc: logoPostgresql, name: "Postgresql" },
+      { imageSrc: logoMySql, name: "MySQL" },
+    ],
+  },
+  {
+    title: "Data Science",
+    items: [
+      { imageSrc: logoPython, name: "Python" },
+      { imageSrc: logoPytorch, name: "Pytorch" },
+      { imageSrc: logoGPU, name: "GPU" },
+    ],
+  },
+  {
+    title: "Others",
+    items: [
+      { imageSrc: logoGit, name: "Git" },
+      { imageSrc: logoGithub, name: "Github" },
+      { imageSrc: logoPostman, name: "Postman" },
+      { imageSrc: logoVscode, name: "VS Code" },
+      { imageSrc: logoVercel, name: "Vercel" },
+    ],
+  },
+];
