@@ -1,7 +1,5 @@
 "use client";
 
-import SplineModel from "./SplineModel";
-
 function Skills() {
   return (
     <div className="w-full flex flex-col justify-center items-center py-4 border-none overflow-hidden">
@@ -16,9 +14,6 @@ function Skills() {
         <div className="h-20 ring"></div>
         <div className="h-20 ring"></div>
         <div className="h-20 ring"></div>
-      </div>
-      <div className="w-full h-[50rem]">
-        <SplineModel />
       </div>
     </div>
   );
