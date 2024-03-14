@@ -9,11 +9,11 @@ function CardRight({ item }) {
     <div className="w-full flex justify-end">
       <div className="w-[100%] sm:w-[50%] h-full flex flex-row-reverse">
         <motion.div
-          initial={{ x: isSmallScreen ? 30 : 60, opacity: 0 }}
+          initial={{ x: isSmallScreen ? 20 : 60, opacity: 0 }}
           whileInView={{
             x: 0,
             opacity: 1,
-            transition: { duration: 1.2, delay: 1.2 },
+            transition: { duration: 1.1, delay: 1.2 },
           }}
           viewport={{ once: true }}
           className="w-full p-6 bg-[rgb(30,27,69)] border-2 border-blue-500 rounded-lg"
