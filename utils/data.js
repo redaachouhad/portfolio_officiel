@@ -56,7 +56,7 @@ export const dataEducation = [
     place: "Grenoble, France",
     date: "2020-2023",
     description:
-      " I had the privilege of being a student at ENSIMAG, the École Nationale Supérieure d'Informatique et de Mathématiques Appliquées de Grenoble. These three years were a period of immense growth and learning, where I immersed myself in the world of computer science and applied mathematics. ENSIMAG's rigorous programs challenged me to think critically, solve complex problems, and develop practical skills in areas such as software engineering, algorithms, and data analysis. My time at ENSIMAG not only expanded my knowledge but also provided valuable hands-on experience through projects and collaborations with peers.",
+      " I had the privilege of being a student at ENSIMAG, the National School of Computer Science and Applied Mathematics of Grenoble. These three years were a period of immense growth and learning, where I immersed myself in the world of computer science and applied mathematics. ENSIMAG's rigorous programs challenged me to think critically, solve complex problems, and develop practical skills in areas such as software engineering, algorithms, and data analysis. My time at ENSIMAG not only expanded my knowledge but also provided valuable hands-on experience through projects and collaborations with peers.",
     diplomas: [
       "Bachelor's Degree in Engineering Science (2020-2021).",
       "Master MOSIG from UGA ( Master of Science in Informatics at Grenoble ): Data Science & Artificial Intelligence (2022-2023).",

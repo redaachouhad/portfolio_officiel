@@ -9,7 +9,7 @@ function CardRight({ item }) {
     <div className="w-full flex justify-end">
       <div className="w-[100%] sm:w-[50%] h-full flex flex-row-reverse">
         <motion.div
-          initial={{ x: isSmallScreen ? 12 : 60, opacity: 0 }}
+          initial={{ x: isSmallScreen ? 30 : 60, opacity: 0 }}
           whileInView={{
             x: 0,
             opacity: 1,
