@@ -6,7 +6,7 @@ import CardLeft from "./CardLeft";
 import CardRight from "./CardRight";
 function Education() {
   return (
-    <div className="w-full flex flex-col justify-center items-center py-4 border-none">
+    <div className="w-full flex flex-col justify-center items-center py-4 border-none overflow-hidden">
       <h1 className="text-white text-[1.7rem] md:text-[2rem] lg:text-[3rem] mb-5">
         🎓 Education
       </h1>
@@ -20,13 +20,16 @@ function Education() {
         <br />
         <br />
         <br />
+        <br />
         <CardLeft item={dataEducation[0]} />
         <br />
         <br />
         <br />
         <br />
         <br />
+        <br />
         <CardRight item={dataEducation[1]} />
+        <br />
         <br />
         <br />
         <br />

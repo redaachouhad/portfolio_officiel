@@ -57,10 +57,10 @@ function CardRight({ item }) {
         </motion.div>
         <div className="flex w-12 relative flex-row-reverse">
           <motion.div
-            initial={{ x: 0, y: 46, opacity: 0 }}
+            initial={{ x: 0, y: 24, opacity: 0 }}
             whileInView={{
               x: 0,
-              y: 46,
+              y: 24,
               opacity: 1,
               transition: {
                 duration: 0.5,
@@ -73,13 +73,13 @@ function CardRight({ item }) {
           <motion.div
             initial={{
               scale: 0,
-              x: isSmallScreen ? "50%" : "-50%",
-              y: "50%",
+              x: isSmallScreen ? "-50%" : "-50%",
+              y: 0,
             }}
             whileInView={{
               scale: 1,
-              x: isSmallScreen ? "50%" : "-50%",
-              y: "50%",
+              x: isSmallScreen ? "-50%" : "-50%",
+              y: 0,
               transition: {
                 duration: 0.8,
                 delay: 0.5,
@@ -94,12 +94,12 @@ function CardRight({ item }) {
             }}
           ></motion.div>
           <motion.span
-            initial={{ y: "50%", x: -120, opacity: 0 }}
+            initial={{ y: 0, x: -120, opacity: 0 }}
             whileInView={{
-              y: "50%",
+              y: 0,
               x: -40,
               opacity: 1,
-              transition: { duration: 0.5 },
+              transition: { duration: 0.5, delay: 0.7 },
             }}
             viewport={{ once: true }}
             className="w-24 h-14 absolute translate-y-1/2 right-full -translate-x-12 sm:flex sm:justify-center sm:items-center hidden text-blue-300  font-semibold"
