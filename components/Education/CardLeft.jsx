@@ -12,7 +12,7 @@ function CardLeft({ item }) {
           whileInView={{
             x: 0,
             opacity: 1,
-            transition: { duration: 0.4, delay: 1.5 },
+            transition: { duration: 0.4, delay: 1.8 },
           }}
           viewport={{ once: true }}
           className="w-full p-6 bg-[rgb(30,27,69)] border-blue-500 border-2 rounded-lg"
@@ -57,7 +57,7 @@ function CardLeft({ item }) {
               opacity: 1,
               transition: {
                 duration: 0.5,
-                delay: 1.1,
+                delay: 0.9,
               },
             }}
             viewport={{ once: true }}
@@ -75,7 +75,7 @@ function CardLeft({ item }) {
               y: "0",
               transition: {
                 duration: 0.4,
-                delay: 0.6,
+                delay: 0.7,
               },
             }}
             viewport={{ once: true }}
