@@ -13,7 +13,7 @@ function CardRight({ item }) {
           whileInView={{
             x: 0,
             opacity: 1,
-            transition: { duration: 1, delay: 1.5 },
+            transition: { duration: 0.5, delay: 1.5 },
           }}
           viewport={{ once: true }}
           className="w-full p-6 bg-[rgb(30,27,69)] border-2 border-blue-500 rounded-lg"
@@ -81,7 +81,7 @@ function CardRight({ item }) {
               x: isSmallScreen ? "-50%" : "-50%",
               y: 0,
               transition: {
-                duration: 0.6,
+                duration: 0.4,
                 delay: 0.6,
               },
             }}
