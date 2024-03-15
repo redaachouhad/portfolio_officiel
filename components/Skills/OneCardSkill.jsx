@@ -7,7 +7,7 @@ function OneCardSkill({ title, items }) {
       whileInView={{
         opacity: 1,
         y: 0,
-        transition: { duration: 0.6, delay: 1.2 },
+        transition: { duration: 0.6, delay: 0.5, type: "linear" },
       }}
       className="h-full p-4 flex flex-col rounded-xl border-2 border-[#7c72c5]"
     >
