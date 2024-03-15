@@ -17,7 +17,6 @@ function CardRight({ item }) {
           }}
           viewport={{ once: true }}
           className="w-full p-6 bg-[rgb(30,27,69)] border-2 border-blue-500 rounded-lg"
-          style={{ boxShadow: "0px 0px 3px rgba(0,0,255,0.8)" }}
         >
           <h1 className="text-white text-lg sm:text-xl font-semibold mb-1">
             {item?.nameOfSchool}
@@ -86,7 +85,7 @@ function CardRight({ item }) {
               },
             }}
             viewport={{ once: true }}
-            className=" w-14 h-14  border-[4px] border-blue-800 rounded-full absolute top-0 left-0 -translate-x-1/2 translate-y-1/2"
+            className=" w-14 h-14  border-[4px] border-blue-500 rounded-full absolute top-0 left-0 -translate-x-1/2 translate-y-1/2"
             style={{
               backgroundImage: `url(${item?.imageUrl})`,
               backgroundPosition: "center",

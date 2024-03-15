@@ -9,7 +9,6 @@ import ItemMenu from "./ItemMenu";
 function NavBar() {
   const [heightMenu, setHeightMenu] = useState("h-0");
   const handleClickMenuHeight = () => {
-    console.log(heightMenu);
     if (heightMenu === "h-0") {
       setHeightMenu("h-[32rem]");
     } else {
@@ -34,7 +33,14 @@ function NavBar() {
       >
         <div className="flex lg:flex-row flex-col gap-10 py-6 lg:py-0 w-full lg:w-fit items-center bg-[rgba(0,0,0,0.8)] lg:bg-transparent backdrop-blur-xl">
           {itemMenu.map((item, index) => {
-            return <ItemMenu key={index} title={item.title} url={item.url} />;
+            return (
+              <ItemMenu
+                key={index}
+                title={item.title}
+                url={item.url}
+                handleClickMenuHeight={handleClickMenuHeight}
+              />
+            );
           })}
           <button className="border-2 border-white flex gap-1 items-center p-2 rounded-lg bg-black">
             <IoLogoGithub className="text-xl" /> <span>Github Profile</span>

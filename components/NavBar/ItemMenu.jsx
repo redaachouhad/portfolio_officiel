@@ -1,9 +1,25 @@
 "use client";
 
-import Link from "next/link";
+import { Link as ScrollLink } from "react-scroll";
+function ItemMenu({ title, url, handleClickMenuHeight }) {
+  const handleOnClick = () => {
+    handleClickMenuHeight("h-0");
+  };
 
-function ItemMenu({ title, url }) {
-  return <Link href={url}>{title}</Link>;
+  return (
+    <ScrollLink
+      onClick={handleOnClick}
+      activeClass="active"
+      to={url}
+      spy={true}
+      smooth={true}
+      offset={-50} // Adjust as needed for header height
+      duration={500}
+      className="cursor-pointer"
+    >
+      {title}
+    </ScrollLink>
+  );
 }
 
 export default ItemMenu;

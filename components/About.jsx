@@ -37,7 +37,10 @@ function About() {
       .start();
   }, []);
   return (
-    <div className="w-full h-[100vh] relative bg-[rgb(7,5,25)] flex justify-center items-center overflow-hidden">
+    <div
+      id="#about"
+      className="w-full h-[100vh] relative bg-[rgb(7,5,25)] flex justify-center items-center overflow-hidden"
+    >
       <div className="w-[90vmin] lg:w-[140vmin]  flex flex-col lg:flex-row-reverse justify-around items-center p-3 lg:gap-2 gap-10">
         {" "}
         <motion.div

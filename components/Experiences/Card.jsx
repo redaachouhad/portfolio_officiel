@@ -13,11 +13,10 @@ function Card({ item }) {
           whileInView={{
             x: 0,
             opacity: 1,
-            transition: { duration: 0.4, delay: 1.5 },
+            transition: { duration: 0.6, delay: 1.5 },
           }}
           viewport={{ once: true }}
           className="w-full p-4 bg-[rgb(30,27,69)] border-2 border-red-500 rounded-lg"
-          style={{ boxShadow: "0px 0px 3px rgba(0,0,255,0.8)" }}
         >
           <h1 className="text-white text-lg sm:text-xl font-semibold mb-1">
             {item?.nameOfSchool}
@@ -38,7 +37,7 @@ function Card({ item }) {
               <div className="w-0 h-0 border-[0.3rem] border-transparent border-l-red-300"></div>
               <span className="text-blue-300 font-medium underline-blue-300 underline">
                 {" "}
-                Skills:
+                Used Technologies:
               </span>
             </div>
           )}
@@ -86,7 +85,7 @@ function Card({ item }) {
               },
             }}
             viewport={{ once: true }}
-            className=" w-14 h-14  border-[4px] border-red-800 rounded-xl absolute top-0 left-0 -translate-x-1/2 translate-y-1/2"
+            className=" w-14 h-14  border-[4px] border-red-500 rounded-xl absolute top-0 left-0 -translate-x-1/2 translate-y-1/2"
             style={{
               backgroundImage: `url(${item?.imageUrl})`,
               backgroundPosition: "center",

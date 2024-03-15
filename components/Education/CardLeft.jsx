@@ -79,7 +79,7 @@ function CardLeft({ item }) {
               },
             }}
             viewport={{ once: true }}
-            className="w-14 h-14 border-[4px] border-blue-800 rounded-full absolute top-0 left-0 sm:left-auto right-auto sm:right-0"
+            className="w-14 h-14 border-[4px] border-blue-500 rounded-full absolute top-0 left-0 sm:left-auto right-auto sm:right-0"
             style={{
               backgroundImage: `url(${item?.imageUrl})`,
               backgroundPosition: "center",

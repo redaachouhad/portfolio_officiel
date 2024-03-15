@@ -71,6 +71,7 @@ export const dataEducation = [
 import logoBoostrap from "./../public/images/boostrap.webp";
 import logoCss from "./../public/images/css_logo.webp";
 import logoExpress from "./../public/images/expressjs.webp";
+import logoFramerMotion from "./../public/images/framer motion.jpg";
 import logoGit from "./../public/images/git.webp";
 import logoGithub from "./../public/images/github.webp";
 import logoGPU from "./../public/images/gpu.webp";
@@ -102,6 +103,7 @@ export const dataSkills = [
       { imageSrc: logoNextjs, name: "Next.js" },
       { imageSrc: logoNextAuth, name: "NextAuth.js" },
       { imageSrc: logoRedux, name: "Redux" },
+      { imageSrc: logoFramerMotion, name: "Framer Motion" },
       { imageSrc: logoMaterialUi, name: "Material UI" },
     ],
   },
