@@ -13,7 +13,7 @@ function CardRight({ item }) {
           whileInView={{
             x: 0,
             opacity: 1,
-            transition: { duration: 1, delay: 2.5 },
+            transition: { duration: 1, delay: 1.5 },
           }}
           viewport={{ once: true }}
           className="w-full p-6 bg-[rgb(30,27,69)] border-2 border-blue-500 rounded-lg"
@@ -64,7 +64,7 @@ function CardRight({ item }) {
               opacity: 1,
               transition: {
                 duration: 0.5,
-                delay: 1.5,
+                delay: 1.1,
               },
             }}
             viewport={{ once: true }}
@@ -81,8 +81,8 @@ function CardRight({ item }) {
               x: isSmallScreen ? "-50%" : "-50%",
               y: 0,
               transition: {
-                duration: 0.9,
-                delay: 1.4,
+                duration: 0.6,
+                delay: 0.6,
               },
             }}
             viewport={{ once: true }}
@@ -94,12 +94,12 @@ function CardRight({ item }) {
             }}
           ></motion.div>
           <motion.span
-            initial={{ y: 0, x: -120, opacity: 0 }}
+            initial={{ y: 0, x: -80, opacity: 0 }}
             whileInView={{
               y: 0,
               x: -40,
               opacity: 1,
-              transition: { duration: 0.7, delay: 1.4 },
+              transition: { duration: 0.7, delay: 1 },
             }}
             viewport={{ once: true }}
             className="w-24 h-14 absolute translate-y-1/2 right-full -translate-x-12 sm:flex sm:justify-center sm:items-center hidden text-blue-300  font-semibold"

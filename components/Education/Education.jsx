@@ -29,6 +29,7 @@ function Education() {
         <br />
         <br />
         <br />
+        <br />
         <CardRight item={dataEducation[1]} />
         <br />
         <br />
@@ -37,9 +38,8 @@ function Education() {
         <br />
         <br />
         <br />
+        <br />
         <CardLeft item={dataEducation[2]} />
-        <br />
-        <br />
         <br />
         <br />
       </div>

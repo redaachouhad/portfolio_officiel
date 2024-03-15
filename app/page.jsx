@@ -20,7 +20,6 @@ export default function Home() {
           color: "rgba(255,255,255, 0.1)",
           zIndex: "1",
         }}
-        // Controls the number of snowflakes that are created (default 150)
         snowflakeCount={150}
       />
       <About />
