@@ -11,7 +11,7 @@ function Skills() {
       </h1>
       <br />
 
-      <div className="w-[85vmin] sm:w-[90vmin] lg:w-[100vmin] z-10 h-fit relative grid grid-cols-1 sm:grid-cols-2 sm:grid-rows-2 gap-8">
+      <div className="w-[85vmin] sm:w-[90vmin] lg:w-[100vmin] z-10 h-fit relative grid grid-cols-1 sm:grid-cols-2 sm:grid-rows-2 gap-10 sm:gap-8">
         {/* <OneCardSkill title={"Frontend"} />
         <OneCardSkill title={"Backend"} />
         <OneCardSkill title={"Data Science"} />
