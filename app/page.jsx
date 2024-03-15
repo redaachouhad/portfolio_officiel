@@ -1,6 +1,7 @@
 "use client";
 import About from "@ext/components/About";
 import Education from "@ext/components/Education/Education";
+import Experiences from "@ext/components/Experiences/Experiences";
 import Skills from "@ext/components/Skills/Skills";
 import Snowfall from "react-snowfall";
 
@@ -25,6 +26,7 @@ export default function Home() {
       <About />
       <Education />
       <Skills />
+      <Experiences />
     </div>
   );
 }

@@ -1,7 +1,6 @@
 "use client";
 
-import { dataEducation } from "@ext/utils/data";
-import "react-vertical-timeline-component/style.min.css"; // Add this line for default styling
+import { dataEducation } from "@ext/utils/data"; // Add this line for default styling
 import CardLeft from "./CardLeft";
 import CardRight from "./CardRight";
 function Education() {

@@ -35,7 +35,7 @@ export const itemMenu = [
 export const dataEducation = [
   {
     nameOfSchool: "Hight School Sidi Lhaj Said",
-    place: "Agadir, Maroc",
+    place: "Agadir, Morocco",
     date: "2017-2018",
     description:
       "I immersed myself in the world of Science and Mathematics for my Baccalaureate. This transformative period was marked by deep dives into algebra, calculus, physics, and chemistry. It was a time of growth, curiosity, and laying the foundation for my academic path ahead.",
@@ -44,7 +44,7 @@ export const dataEducation = [
   },
   {
     nameOfSchool: "CPGE Reda Slaoui",
-    place: "Agadir, Maroc",
+    place: "Agadir, Morocco",
     date: "2018-2020",
     description:
       " I navigated the rigorous world of preparatory classes, starting with MPSI field (Mathematics, Physics, and Engineering Sciences) in the first year and transitioning to MP field (Mathematics and Physics) in the second year. These years were intense, challenging, and immensely rewarding, shaping my analytical thinking and preparing me for future academic pursuits.",
@@ -132,5 +132,39 @@ export const dataSkills = [
       { imageSrc: logoVscode, name: "VS Code" },
       { imageSrc: logoVercel, name: "Vercel" },
     ],
+  },
+];
+
+//  Data Experiences
+
+import logoQaProcess from "./../public/images/qaprocess.webp";
+import logoUm6p from "./../public/images/um6p_logo.jpg";
+
+export const dataExperiences = [
+  {
+    nameOfSchool: "Assistant Engineer Internship: Full Stack Developer",
+    place: "QA Process, Paris, France.",
+    date: "June - August 2022",
+    description:
+      "During my internship at QA PROCESS, my primary goal was to actively contribute to crucial projects, specifically focusing on the implementation of a website for a social association dedicated to immigrant and refugee minors without official documents or parents in France. This involved tasks such as setting up web hosting on AWS, participating in custom web development using PHP, CSS, JavaScript, HTML, and SQL, and ensuring the quality and reliability of the website through test automation using tools like JMeter. The objective was to support the mission of the association and enhance the online presence to better serve the needs of immigrant and refugee minors without official documentation or parental support in France.",
+    diplomas: ["HTML", "CSS", "JavaScript", "SQL (MariaDB)", "PHP", "AWS EC2"],
+    imageUrl: logoQaProcess.src,
+  },
+  {
+    nameOfSchool: "Research Internship: Data Scientist (Computer Vision)",
+    place: "UM6P, Benguerir, Morocco",
+    date: "March - September 2023",
+    description:
+      "The main goal of this internship is to implement the '3D-Recpy' framework for the development and deployment of Deep Learning models in 3D reconstruction. This involves using deep learning techniques, including Transformers and Convolutional Neural Networks (CNNs), to generate three-dimensional voxel representations of objects from two-dimensional images. The framework comprises four primary blocks (preprocess, encoder, decoder, and postprocess) to facilitate different stages of the 3D reconstruction process. The internship also includes a comprehensive evaluation of the framework's performance using various metrics, contributing to the advancement of 3D reconstruction techniques.",
+    diplomas: [
+      "Python",
+      "Pytorch",
+      "Pytorch-Lightening",
+      "GPU",
+      "Deep Learning",
+      "Transformers",
+      "Convolutional Neural Network.",
+    ],
+    imageUrl: logoUm6p.src,
   },
 ];
