@@ -41,7 +41,7 @@ function About() {
       id="#about"
       className="w-full h-[100vh] relative bg-[rgb(7,5,25)] flex justify-center items-center overflow-hidden"
     >
-      <div className="w-[90vmin] lg:w-[140vmin]  flex flex-col lg:flex-row-reverse justify-around items-center p-3 lg:gap-2 gap-10">
+      <div className="w-[90vmin] lg:w-[140vmin]  flex flex-col lg:flex-row-reverse justify-around items-center p-3 lg:gap-2 gap-4">
         {" "}
         <motion.div
           initial={{ opacity: 0, x: 70 }}
@@ -95,16 +95,16 @@ function About() {
           className="text-white text-center lg:text-start lg:w-[60%] bg-[rgb(33,27,105)] z-10 rounded-lg p-4"
           // style={{ boxShadow: "0px 0px 10px 4px #5d2b6555" }}
         >
-          <p className="text-[1.2rem] lg:text-[2rem] font-normal flex-col items-center">
+          <p className="text-[1rem] lg:text-[2rem] font-normal flex-col items-center">
             Hi👋 , I am
           </p>
-          <p className="text-[1.3rem] lg:text-[2.5rem] font-semibold sail-regular">
+          <p className="text-[1.1rem] lg:text-[2.5rem] font-semibold sail-regular">
             Reda Achouhad
           </p>
-          <p className="text-[1.2rem] lg:text-[1.7rem] mb-1">
+          <p className="text-[1.2rem] lg:text-[1.4rem] mb-1">
             <span ref={appRef} className="text-blue-300 font-bold"></span>
           </p>
-          <p className="text-white text-center lg:text-justify text-sm lg:text-lg">
+          <p className="text-white text-center lg:text-justify text-xs lg:text-lg">
             I am a motivated and versatile individual, always eager to take on
             new challenges. With a passion for learning I am dedicated to
             delivering high-quality results. With a positive attitude and a
@@ -113,7 +113,7 @@ function About() {
           </p>
 
           <div className="flex justify-center mt-3">
-            <button className="p-1.5 rounded-lg bg-blue-800 font-bold shadow-md shadow-black">
+            <button className="p-1.5 rounded-lg bg-blue-800 font-bold shadow-md shadow-black text-sm">
               Download CV
             </button>
           </div>
