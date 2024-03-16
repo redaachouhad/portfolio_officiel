@@ -101,7 +101,7 @@ function About() {
           <p className="text-[1.1rem] lg:text-[2.5rem] font-semibold sail-regular">
             Reda Achouhad
           </p>
-          <p className="text-[1.2rem] lg:text-[1.4rem] mb-1">
+          <p className="text-[0.9rem] lg:text-[1.4rem] mb-1">
             <span ref={appRef} className="text-blue-300 font-bold"></span>
           </p>
           <p className="text-white text-center lg:text-justify text-xs lg:text-lg">
