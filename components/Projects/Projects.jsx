@@ -1,4 +1,5 @@
 "use client";
+import { dataProjects } from "@ext/utils/data";
 import CardProject from "./CardProject";
 function Projects() {
   return (
@@ -9,13 +10,16 @@ function Projects() {
       <h1 className="text-white text-[1.5rem] md:text-[1.8rem] lg:text-[2.3rem] mb-5">
         🌟 Projects
       </h1>
+
       <br />
 
       <div className="w-[85vmin] sm:w-[92vmin] md:w-[96vmin] lg:w-[120vmin] z-10 h-fit relative grid grid-cols-1 sm:grid-cols-2 sm:grid-rows-2 gap-10 sm:gap-8">
-        <CardProject />
-        <CardProject />
-        <CardProject />
+        {dataProjects.map((item, index) => {
+          return <CardProject key={index} item={item} />;
+        })}
       </div>
+      <br />
+      <br />
     </div>
   );
 }
