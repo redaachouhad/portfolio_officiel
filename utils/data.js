@@ -90,6 +90,8 @@ import logoPython from "./../public/images/python.webp";
 import logoPytorch from "./../public/images/pytorch.webp";
 import logoReact from "./../public/images/react.webp";
 import logoRedux from "./../public/images/redux.png";
+import logoTailwindcss from "./../public/images/tailwindcss.png";
+import logoTypeScript from "./../public/images/typescript.png";
 import logoVercel from "./../public/images/vercel.webp";
 import logoVscode from "./../public/images/vs_code.webp";
 export const dataSkills = [
@@ -98,7 +100,9 @@ export const dataSkills = [
     items: [
       { imageSrc: logoHtml, name: "HTML" },
       { imageSrc: logoCss, name: "CSS" },
+      { imageSrc: logoTailwindcss, name: "TailwindCSS" },
       { imageSrc: logoJavaScript, name: "JavaScript" },
+      { imageSrc: logoTypeScript, name: "TypeScript" },
       { imageSrc: logoBoostrap, name: "Boostrap" },
       { imageSrc: logoReact, name: "React.js" },
       { imageSrc: logoNextjs, name: "Next.js" },
@@ -185,6 +189,7 @@ export const dataProjects = [
       "Css",
       "tailwindCss",
       "Javascript",
+      "Typescript",
       "React.js",
       "Next.js",
       "NextAuth.js",
