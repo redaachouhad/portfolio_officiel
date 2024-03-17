@@ -13,7 +13,7 @@ function Projects() {
 
       <br />
 
-      <div className="w-[85vmin] sm:w-[92vmin] md:w-[96vmin] lg:w-[120vmin] z-10 h-full relative grid grid-cols-1 sm:grid-cols-2  gap-10 sm:gap-8">
+      <div className="w-[85vmin] sm:w-[92vmin] md:w-[96vmin] lg:w-[120vmin] xl:w-[150vmin] z-10 h-full relative grid grid-cols-1 sm:grid-cols-2  gap-10 sm:gap-8">
         {dataProjects.map((item, index) => {
           return <CardProject key={index} item={item} />;
         })}
