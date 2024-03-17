@@ -3,9 +3,11 @@ function Footer() {
   return (
     <div
       id="footer"
-      className="w-full bg-[rgb(7,38,72)] text-white text-center py-2 sm:py-4"
+      className="w-full bg-[rgb(7,38,72)] text-white text-center py-2 sm:py-4 font-bold"
     >
-      <span>&copy; Reda Achouhad &ndash; {year}</span>
+      <span>
+        <span className="font-light">&copy;</span> Reda Achouhad &ndash; {year}
+      </span>
     </div>
   );
 }

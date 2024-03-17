@@ -75,9 +75,11 @@ import logoFirebase from "./../public/images/firebase.png";
 import logoFramerMotion from "./../public/images/framer motion.jpg";
 import logoGit from "./../public/images/git.webp";
 import logoGithub from "./../public/images/github.webp";
+import logogoogleColab from "./../public/images/googleColab.jpg";
 import logoGPU from "./../public/images/gpu.webp";
 import logoHtml from "./../public/images/html_logo.webp";
 import logoJavaScript from "./../public/images/js.webp";
+import logoJupyter from "./../public/images/jupyter.png";
 import logoMaterialUi from "./../public/images/material_ui.webp";
 import logoMongoDb from "./../public/images/mongodb.webp";
 import logoMySql from "./../public/images/mysql2.webp";
@@ -94,6 +96,7 @@ import logoTailwindcss from "./../public/images/tailwindcss.png";
 import logoTypeScript from "./../public/images/typescript.png";
 import logoVercel from "./../public/images/vercel.webp";
 import logoVscode from "./../public/images/vs_code.webp";
+
 export const dataSkills = [
   {
     title: "Frontend",
@@ -129,6 +132,8 @@ export const dataSkills = [
       { imageSrc: logoPython, name: "Python" },
       { imageSrc: logoPytorch, name: "Pytorch" },
       { imageSrc: logoGPU, name: "GPU" },
+      { imageSrc: logoJupyter, name: "Jupyter" },
+      { imageSrc: logogoogleColab, name: "Google Colab" },
     ],
   },
   {
