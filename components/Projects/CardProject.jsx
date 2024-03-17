@@ -40,14 +40,18 @@ function CardProject({ item }) {
       <br />
       <div className="flex justify-around">
         <motion.button
-          whileTap={{ scale: 0.95 }}
+          whileTap={{ scale: 0.85 }}
           className="border-2 text-[rgb(133,76,230)] border-[rgb(133,76,230)] bg-transparent hover:text-white hover:border-white hover:bg-[rgb(133,76,230)] text-sm sm:text-md p-1.5 rounded-lg font-semibold transition-colors duration-500"
         >
           See Code
         </motion.button>
-        <button className="border-2 text-[rgb(133,76,230)] border-[rgb(133,76,230)] bg-transparent hover:text-white hover:border-white hover:bg-[rgb(133,76,230)] text-sm sm:text-md p-1.5 rounded-lg font-semibold transition-colors duration-500">
+        <motion.button
+          whileTap={{ scale: 0.85 }}
+          onClick={() => window.open(item?.liveDemo, "_blank")}
+          className="border-2 text-[rgb(133,76,230)] border-[rgb(133,76,230)] bg-transparent hover:text-white hover:border-white hover:bg-[rgb(133,76,230)] text-sm sm:text-md p-1.5 rounded-lg font-semibold transition-colors duration-500"
+        >
           Live Demo
-        </button>
+        </motion.button>
       </div>
     </motion.div>
   );

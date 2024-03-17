@@ -173,16 +173,26 @@ export const dataExperiences = [
 
 //
 
-import project1 from "./../public/images/project1.png";
+import project1 from "./../public/images/taskEaseProject.jpeg";
 
 export const dataProjects = [
   {
     image: project1,
-    tech: ["Html", "Javascript"],
-    title: "Hello World",
+    tech: [
+      "Html",
+      "Css",
+      "tailwindCss",
+      "Javascript",
+      "React.js",
+      "Next.js",
+      "NextAuth.js",
+      "Redux",
+      "react-beautiful-dnd",
+    ],
+    title: "TaskEase App",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "Taskease is a Next.js web application designed for efficient task management, akin to Trello. Users can categorize tasks into three boards: Todo, In Progress, and Done, facilitating clear progress tracking. Key features include easy task creation with detailed descriptions, due dates, and more, as well as a drag-and-drop interface for seamless task movement between boards. ",
     seeCode: "",
-    liveDemo: "",
+    liveDemo: "https://taskease-app-reda-achouhads-projects.vercel.app",
   },
 ];
