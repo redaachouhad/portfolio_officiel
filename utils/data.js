@@ -71,6 +71,7 @@ export const dataEducation = [
 import logoBoostrap from "./../public/images/boostrap.webp";
 import logoCss from "./../public/images/css_logo.webp";
 import logoExpress from "./../public/images/expressjs.webp";
+import logoFirebase from "./../public/images/firebase.png";
 import logoFramerMotion from "./../public/images/framer motion.jpg";
 import logoGit from "./../public/images/git.webp";
 import logoGithub from "./../public/images/github.webp";
@@ -115,6 +116,7 @@ export const dataSkills = [
       { imageSrc: logoMongoDb, name: "MongoDb" },
       { imageSrc: logoPostgresql, name: "Postgresql" },
       { imageSrc: logoMySql, name: "MySQL" },
+      { imageSrc: logoFirebase, name: "Firebase" },
     ],
   },
   {
@@ -188,6 +190,10 @@ export const dataProjects = [
       "NextAuth.js",
       "Redux",
       "react-beautiful-dnd",
+      "react Icon",
+      "Mongoose",
+      "MongoDb",
+      "Firebase",
     ],
     title: "TaskEase App",
     description:
