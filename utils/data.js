@@ -81,6 +81,7 @@ import logoGPU from "./../public/images/gpu.webp";
 import logoHtml from "./../public/images/html_logo.webp";
 import logoJavaScript from "./../public/images/js.webp";
 import logoJupyter from "./../public/images/jupyter.png";
+import logoLinux from "./../public/images/linux.jpg";
 import logoMaterialUi from "./../public/images/material_ui.webp";
 import logoMongoDb from "./../public/images/mongodb.webp";
 import logoMySql from "./../public/images/mysql2.webp";
@@ -97,7 +98,6 @@ import logoTailwindcss from "./../public/images/tailwindcss.png";
 import logoTypeScript from "./../public/images/typescript.png";
 import logoVercel from "./../public/images/vercel.webp";
 import logoVscode from "./../public/images/vs_code.webp";
-
 export const dataSkills = [
   {
     title: "Frontend",
@@ -146,6 +146,7 @@ export const dataSkills = [
       { imageSrc: logoPostman, name: "Postman" },
       { imageSrc: logoVscode, name: "VS Code" },
       { imageSrc: logoEclipse, name: "Eclipse" },
+      { imageSrc: logoLinux, name: "Linux" },
     ],
   },
 ];
@@ -193,7 +194,6 @@ export const dataProjects = [
     image: project1,
     tech: [
       "Html",
-      "Css",
       "tailwindCss",
       "Javascript",
       "Typescript",
@@ -206,6 +206,7 @@ export const dataProjects = [
       "Mongoose",
       "MongoDb",
       "Firebase",
+      "Vercel",
     ],
     title: "TaskEase App",
     description:
