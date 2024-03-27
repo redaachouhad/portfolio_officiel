@@ -70,6 +70,7 @@ export const dataEducation = [
 // Data of Skills:
 import logoBoostrap from "./../public/images/boostrap.webp";
 import logoCss from "./../public/images/css_logo.webp";
+import logoEclipse from "./../public/images/eclipse.png";
 import logoExpress from "./../public/images/expressjs.webp";
 import logoFirebase from "./../public/images/firebase.png";
 import logoFramerMotion from "./../public/images/framer motion.jpg";
@@ -141,9 +142,10 @@ export const dataSkills = [
     items: [
       { imageSrc: logoGit, name: "Git" },
       { imageSrc: logoGithub, name: "Github" },
+      { imageSrc: logoVercel, name: "Vercel" },
       { imageSrc: logoPostman, name: "Postman" },
       { imageSrc: logoVscode, name: "VS Code" },
-      { imageSrc: logoVercel, name: "Vercel" },
+      { imageSrc: logoEclipse, name: "Eclipse" },
     ],
   },
 ];
