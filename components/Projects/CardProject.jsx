@@ -1,14 +1,18 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
-function CardProject({ item }) {
+function CardProject({ item, index }) {
   return (
     <motion.div
       initial={{
         opacity: 0,
         scale: 0.7,
       }}
-      whileInView={{ opacity: 1, scale: 1, transition: { delay: 1.5 } }}
+      whileInView={{
+        opacity: 1,
+        scale: 1,
+        transition: { delay: 0.5, duration: 0.5 },
+      }}
       viewport={{ once: true }}
       className="border-2 p-4 flex-col space-y-2 rounded-lg bg-[rgb(21,22,40)] border-[rgb(133,76,230)]"
     >
