@@ -1,13 +1,15 @@
 import { motion } from "framer-motion";
 import OneSkill from "./OneSkill";
-function OneCardSkill({ title, items }) {
+function OneCardSkill({ title, items, range }) {
+  const initialization =
+    range % 2 == 0 ? { opacity: 0, x: -80 } : { opacity: 0, x: 80 };
   return (
     <motion.div
-      initial={{ opacity: 0, y: 60 }}
+      initial={initialization}
       whileInView={{
         opacity: 1,
-        y: 0,
-        transition: { duration: 0.3, delay: 1, type: "linear" },
+        x: 0,
+        transition: { duration: 0.5, delay: 1, type: "linear" },
       }}
       viewport={{ once: true }}
       className="h-full p-4 flex flex-col rounded-xl border-2 border-[#7c72c5]"

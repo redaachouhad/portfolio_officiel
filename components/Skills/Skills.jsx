@@ -16,7 +16,14 @@ function Skills() {
 
       <div className="w-[85vmin] sm:w-[90vmin] lg:w-[100vmin] z-10 h-fit relative grid grid-cols-1 sm:grid-cols-2 sm:grid-rows-2 gap-10 sm:gap-8">
         {dataSkills.map((e, index) => {
-          return <OneCardSkill key={index} title={e.title} items={e.items} />;
+          return (
+            <OneCardSkill
+              key={index}
+              title={e.title}
+              items={e.items}
+              range={index}
+            />
+          );
         })}
       </div>
       <br />
