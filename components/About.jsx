@@ -58,7 +58,7 @@ function About() {
             width={50}
             height={50}
             className="w-[83%] rounded-full z-10"
-            unoptimized
+            // unoptimized
             priority
           />
         </motion.div>
