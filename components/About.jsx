@@ -53,12 +53,13 @@ function About() {
           <div className="absolute w-[93%] h-[93%] border-[3px] border-transparent border-t-blue-500 border-b-blue-500 rounded-full border-spinner-right"></div>
           <div className="absolute w-[100%] h-[100%] border-[3px] border-transparent border-r-blue-500 border-l-blue-500 rounded-full border-spinner-left"></div>
           <Image
-            src={myImg.src}
+            src={myImg}
             alt="my image"
             width={50}
             height={50}
             className="w-[83%] rounded-full z-10"
-            // unoptimized
+            unoptimized
+            // quality={100}
             priority
           />
         </motion.div>
