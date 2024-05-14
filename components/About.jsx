@@ -3,7 +3,8 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { useEffect, useRef } from "react";
 import Typewriter from "typewriter-effect/dist/core";
-import myImg from "../public/images/my_image.jpeg";
+// import myImg from "../public/images/my_image.jpeg";
+import myImg from "../public/images/other_my_photo.jpeg";
 function About() {
   const appRef = useRef(null);
 
@@ -57,7 +58,7 @@ function About() {
             width={50}
             height={50}
             className="w-[83%] rounded-full z-10"
-            unoptimized={true}
+            unoptimized
             priority
           />
         </motion.div>
