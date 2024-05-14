@@ -13,7 +13,7 @@ function Card({ item }) {
           whileInView={{
             x: 0,
             opacity: 1,
-            transition: { duration: 0.6, delay: 1.5 },
+            transition: { duration: 0.4, delay: 1.5 },
           }}
           viewport={{ once: true }}
           className="w-full p-4 bg-[rgb(30,27,69)] border-2 border-red-500 rounded-lg"

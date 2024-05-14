@@ -2,15 +2,22 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 function CardProject({ item, index }) {
+  const initialization =
+    index % 2 == 0
+      ? {
+          x: -60,
+          opacity: 0,
+        }
+      : {
+          x: 60,
+          opacity: 0,
+        };
   return (
     <motion.div
-      initial={{
-        opacity: 0,
-        scale: 0.7,
-      }}
+      initial={initialization}
       whileInView={{
         opacity: 1,
-        scale: 1,
+        x: 0,
         transition: { delay: 0.5, duration: 0.5 },
       }}
       viewport={{ once: true }}
