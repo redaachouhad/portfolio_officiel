@@ -212,6 +212,6 @@ export const dataProjects = [
     description:
       "Taskease is a Next.js web application designed for efficient task management, akin to Trello. Users can categorize tasks into three boards: Todo, In Progress, and Done, facilitating clear progress tracking. Key features include easy task creation with detailed descriptions, due dates, and more, as well as a drag-and-drop interface for seamless task movement between boards. ",
     seeCode: "",
-    liveDemo: "https://taskease-app-reda-achouhads-projects.vercel.app",
+    liveDemo: "https://task-easy-app-reda-achouhads-projects.vercel.app/",
   },
 ];
