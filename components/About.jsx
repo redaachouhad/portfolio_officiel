@@ -106,7 +106,7 @@ function About() {
           <p className="text-[1rem] lg:text-[1.4rem] mb-1">
             <span ref={appRef} className="text-blue-300 font-bold"></span>
           </p>
-          <p className="text-white text-center lg:text-justify text-xs lg:text-lg">
+          <p className="text-white text-center lg:text-justify text-sm lg:text-lg">
             I am a motivated and versatile individual, always eager to take on
             new challenges. With a passion for learning I am dedicated to
             delivering high-quality results. With a positive attitude and a

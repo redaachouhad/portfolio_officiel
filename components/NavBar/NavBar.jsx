@@ -42,7 +42,12 @@ function NavBar() {
               />
             );
           })}
-          <button className="border-2 border-white flex gap-1 items-center p-2 rounded-lg bg-black">
+          <button
+            className="border-2 border-white flex gap-1 items-center p-2 rounded-lg bg-black"
+            onClick={() => {
+              window.open("https://github.com/redaachouhad", "_blank");
+            }}
+          >
             <IoLogoGithub className="text-xl" /> <span>Github Profile</span>
           </button>
         </div>

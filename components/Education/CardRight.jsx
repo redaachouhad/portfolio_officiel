@@ -28,7 +28,7 @@ function CardRight({ item }) {
             {item?.date}
           </p>
 
-          <p className="text-white text-xs sm:text-sm mt-2 text-justify">
+          <p className="text-white text-sm sm:text-md mt-2 text-justify">
             {item?.description}
           </p>
 

@@ -70,6 +70,7 @@ export const dataEducation = [
 // Data of Skills:
 import logoBoostrap from "./../public/images/boostrap.webp";
 import logoCss from "./../public/images/css_logo.webp";
+import logoDocker from "./../public/images/docker.png";
 import logoEclipse from "./../public/images/eclipse.png";
 import logoExpress from "./../public/images/expressjs.webp";
 import logoFirebase from "./../public/images/firebase.png";
@@ -78,11 +79,19 @@ import logoGit from "./../public/images/git.webp";
 import logoGithub from "./../public/images/github.webp";
 import logogoogleColab from "./../public/images/googleColab.jpg";
 import logoGPU from "./../public/images/gpu.webp";
+import logoHelm from "./../public/images/helm.png";
 import logoHtml from "./../public/images/html_logo.webp";
+import logoIntellij from "./../public/images/IntelliJ.png";
+import logoJava from "./../public/images/java.webp";
+import logoJenkins from "./../public/images/jenkins.webp";
 import logoJavaScript from "./../public/images/js.webp";
 import logoJupyter from "./../public/images/jupyter.png";
+import logoKafka from "./../public/images/kafka.png";
+import logoKeycloak from "./../public/images/keycloak.png";
+import logoKubernetes from "./../public/images/kubernetes.png";
 import logoLinux from "./../public/images/linux.jpg";
 import logoMaterialUi from "./../public/images/material_ui.webp";
+import logoMaven from "./../public/images/maven.png";
 import logoMongoDb from "./../public/images/mongodb.webp";
 import logoMySql from "./../public/images/mysql2.webp";
 import logoNextAuth from "./../public/images/nextauth.png";
@@ -94,10 +103,14 @@ import logoPython from "./../public/images/python.webp";
 import logoPytorch from "./../public/images/pytorch.webp";
 import logoReact from "./../public/images/react.webp";
 import logoRedux from "./../public/images/redux.png";
+import logoSpringBoot from "./../public/images/springBoot.png";
 import logoTailwindcss from "./../public/images/tailwindcss.png";
+import logoTerraform from "./../public/images/terraform.png";
 import logoTypeScript from "./../public/images/typescript.png";
 import logoVercel from "./../public/images/vercel.webp";
 import logoVscode from "./../public/images/vs_code.webp";
+import logoZipkin from "./../public/images/zipkin.png";
+
 export const dataSkills = [
   {
     title: "Frontend",
@@ -125,6 +138,23 @@ export const dataSkills = [
       { imageSrc: logoPostgresql, name: "Postgresql" },
       { imageSrc: logoMySql, name: "MySQL" },
       { imageSrc: logoFirebase, name: "Firebase" },
+      { imageSrc: logoJava, name: "Java" },
+      { imageSrc: logoSpringBoot, name: "Spring boot" },
+      { imageSrc: logoKeycloak, name: "Keycloak" },
+      { imageSrc: logoKafka, name: "Kafka" },
+      { imageSrc: logoZipkin, name: "Zipkin" },
+      { imageSrc: logoMaven, name: "Maven" },
+    ],
+  },
+  {
+    title: "Devops",
+    items: [
+      { imageSrc: logoGit, name: "Git" },
+      { imageSrc: logoJenkins, name: "Jenkins" },
+      { imageSrc: logoDocker, name: "Docker" },
+      { imageSrc: logoKubernetes, name: "Kubernetes" },
+      { imageSrc: logoHelm, name: "Helm" },
+      { imageSrc: logoTerraform, name: "Terraform" },
     ],
   },
   {
@@ -140,13 +170,13 @@ export const dataSkills = [
   {
     title: "Others",
     items: [
-      { imageSrc: logoGit, name: "Git" },
       { imageSrc: logoGithub, name: "Github" },
       { imageSrc: logoVercel, name: "Vercel" },
       { imageSrc: logoPostman, name: "Postman" },
       { imageSrc: logoVscode, name: "VS Code" },
       { imageSrc: logoEclipse, name: "Eclipse" },
       { imageSrc: logoLinux, name: "Linux" },
+      { imageSrc: logoIntellij, name: "Intellij" },
     ],
   },
 ];
@@ -187,11 +217,31 @@ export const dataExperiences = [
 
 //
 
-import project1 from "./../public/images/taskEaseProject.jpeg";
-
+import project3 from "./../public/images/architectureShema.png";
+import project1 from "./../public/images/profile_page.jpeg";
+import project2 from "./../public/images/taskEaseProject.jpeg";
 export const dataProjects = [
   {
     image: project1,
+    tech: [
+      "Html",
+      "Css",
+      "Javascript",
+      "React.js",
+      "Next.js",
+      "react Icon",
+      "Vercel",
+    ],
+    title: "Social Media App",
+    typeProject: "Frontend Project : ",
+    description:
+      "Social Media App is a simple frontend project with two page Home where you have posts and Profile that contains personal information of the user. It built using React and deployed in Vercel",
+    seeCode: "https://github.com/redaachouhad/frontend-simple-social-app",
+    liveDemo:
+      " https://frontend-simple-social-app-reda-achouhads-projects.vercel.app/",
+  },
+  {
+    image: project2,
     tech: [
       "Html",
       "tailwindCss",
@@ -200,7 +250,7 @@ export const dataProjects = [
       "React.js",
       "Next.js",
       "NextAuth.js",
-      "Redux",
+      "Redux toolkit",
       "react-beautiful-dnd",
       "react Icon",
       "Mongoose",
@@ -209,9 +259,41 @@ export const dataProjects = [
       "Vercel",
     ],
     title: "TaskEase App",
+    typeProject: "Full Stack Project : ",
     description:
       "Taskease is a Next.js web application designed for efficient task management, akin to Trello. Users can categorize tasks into three boards: Todo, In Progress, and Done, facilitating clear progress tracking. Key features include easy task creation with detailed descriptions, due dates, and more, as well as a drag-and-drop interface for seamless task movement between boards. ",
-    seeCode: "",
+    seeCode: "https://github.com/redaachouhad/task-easy-app",
     liveDemo: "https://task-easy-app-reda-achouhads-projects.vercel.app/",
+  },
+  {
+    image: project3,
+    tech: [
+      "Html",
+      "tailwindCss",
+      "Javascript",
+      "Typescript",
+      "React.js",
+      "Next.js",
+      "NextAuth.js",
+      "Redux toolkit",
+      "material icon",
+      "react Icon",
+      "Firebase",
+      "stripe",
+      "keycloak",
+      "java",
+      "spring boot",
+      "spring jpa",
+      "spring security",
+      "kafka",
+      "postgres",
+      "docker",
+    ],
+    title: "Eco Shop App",
+    typeProject: "Full Stack Project : ",
+    description:
+      "Taskease is a Next.js web application designed for efficient task management, akin to Trello. Users can categorize tasks into three boards: Todo, In Progress, and Done, facilitating clear progress tracking. Key features include easy task creation with detailed descriptions, due dates, and more, as well as a drag-and-drop interface for seamless task movement between boards. ",
+    seeCode: "https://github.com/redaachouhad/eco-shop-app",
+    liveDemo: "https://github.com/redaachouhad/eco-shop-app",
   },
 ];
